@@ -1,0 +1,58 @@
+CS5331 Virtual-Reality TTU
+Student’s Choice Report
+
+by Gantaphon Chalumporn
+
+VIVE Tracker
+
+Overview: What is it? History of the technique/device?
+Vive Tracker is officially announced to the public in 2017. It is  an extension sensor that currently only compatible with VIVE virtual reality system. It requires VIVE base station to operate. All sensors inside VIVE tracker is similar with in the VIVE controller which includes motion/angle detection, gyro sensor. In the other words, it is a VIVE controller without buttons and haptic responses. It provides the position and angle on the virtual environments. The operating range is the same as VIVE virtual reality system which is 15’ x 15’ room size.
+
+Where is it used? What are best suited applications?
+There are some support applications right now for example Arizona sunshine, Holo ball, Practisim VR, Eleven table tennis VR, Racket NX etc. The official controllers that sold along with the VIVE Tracker are Racket sport set and Hyper blaster set. The Racket sport set is an racket shape with VIVE Tracker mount slot. And the Hyper blaster is an pistol shape with trigger, haptic feedback and VIVE Tracer mount slot.
+The most important software to mention is VIVEPORT. This software is for develop purpose. It is used to receive the sensors data from the VIVE Trackers. There are no limitation of number of devices yet. Developer could do anythings with VIVE Tracker. One of an interesting example is to create a mixed reality video.
+
+The basics: How does it work?
+Similar to the most VR controller, it has sensors that interact with the base devices to track the position of the devices and mapped in the virtual reality environment.
+
+Why is it a good use of VR? Why is it unique? What’s cool about it?
+	The more sensor means more interactive motion in the VR environment. Having the VR sensor with the open tools for development allows endless of possibility to use.
+
+Critique on strengths and weaknesses/issues such as design flaws or technical flaws. Is there still more to do?
+	The strength of this devices is the open tools for developers which could be a lot of possibility for VR technology. However, its strength might also be its weaknesses, since it mostly open for the developer so it might not be so convenient for general application. It require extra setup of hardware to use this sensors that correctly related with the applications.
+
+Can this lead to varying degrees of simulator sickness including nausea, fatigue, headache, eyestrain, vertigo, and dizziness? What is your rating on the scale from 0 to 10?
+The sickness scale should be 0 - 1. Idealistically, more sensors could improve the sensability in VR environment. However, sometime if there are delay that for example might create some sickness when combine with VR headset.
+
+
+What are the similar/related applications?
+The similar devices are all the VR controller which have all the sensors to detect the motions. Which use the similar kind of technology.
+VIVE Controller
+Oculus Touch
+Valve Knuckle
+Samsung Gear VR controller
+PlayStation VR controller
+Etc.
+However, there is no other device that provide an extensional sensor for VR yet.
+
+Are there any other potential applications of the technique/device?
+	There are no VR sensors that allow this wilde border for developer in the market. It really expand the possibility of VR development. The potential application right now is the mixed reality video. With VIVE Tracker, mixed reality video could be more realistic and real time. By putting one of the VIVE Tracker on the camera, which make the cameras are trackable and allow the movement of camera to create mixed reality.
+
+Conclusion
+	VIVE Tracker is an sensors device similar to the VR controller. It allows extra motion trackable in the VR environment. The VIVE Tracker isn’t a device that would be considered as an embedded device. It require extra hardware devices and specific setup to operate. Currently there are only few applications for VIVE Tracker as an end product. VIVE provides development tools for working with VIVE tracker. This technology expands the capability of virtual reality. 
+
+References
+VIVE official website
+https://www.vive.com/us/
+VIVE Tracker
+https://www.vive.com/us/vive-tracker/
+VIVE Developer
+https://developer.vive.com/us/vive-tracker-for-developer/
+Demonstration video
+https://www.youtube.com/watch?v=yutdalJoctc
+https://www.youtube.com/watch?v=fGzqXPvh8po
+https://www.youtube.com/watch?v=Dw8La6fylLQ
+https://www.youtube.com/watch?v=dBhXqkdXy6w
+
+
+
