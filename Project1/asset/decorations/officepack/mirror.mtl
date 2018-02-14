@@ -1,0 +1,40 @@
+# Blender MTL File: 'mirror.blend'
+# Material Count: 4
+
+newmtl mirror
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl mirror.back(optional)
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.138428 0.132579 0.132579
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl wood.mirror.frame
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd wood.mirror.frame.gg.png
+
+newmtl wood.mirror.holder
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd wood.holder.mirror.gg.png
