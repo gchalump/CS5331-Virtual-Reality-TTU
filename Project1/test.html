@@ -2,7 +2,7 @@
 <html>
 <head>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/master/src/controls/universal-controls.js"></script>
 </head>
 
 
@@ -28,14 +28,17 @@
 		scale="0.013 0.013 0.013">
 	</a-obj-model>
 
-	<a-camera
+	<a-camera universal-controls
 	  	position="-15 3.6 -12"
 	  	rotation="-15.9 -89 0"
 	  	cursor-visible="true"
 	  	cursor-scale="2"
 	  	cursor-color="#0095DD"
 	  	cursor-opacity="0.5">
-	  	<a-cursor color="#FF0000">
+	  	<!-- <a-cursor color="#FF0000"> -->
+	  	<a-entity raycaster="far: 150; objects: .intersectable" cursor geometry="primitive: ring; radiusOuter: 0.015;
+                              radiusInner: 0.01; segmentsTheta: 32" material="color: #283644; shader: flat" position="0 0 -0.75">
+        </a-entity>
 	</a-camera>
 
 
