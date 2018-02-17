@@ -44,7 +44,7 @@
 
 
 	<a-camera universal-controls
-	  	position="-15 3.6 -12"
+	  	position="-15 0 -12"
 	  	rotation="-15.9 -89 0"
 	  	cursor-visible="true"
 	  	cursor-scale="2"
@@ -56,9 +56,17 @@
         </a-entity>
 	</a-camera>
 
-	<a-box color="tomato" position="0 0 0" depth="2" height="2" width="2" class="intersectable">
+<!-- 	<a-box color="tomato" position="0 0 0" depth="2" height="2" width="2" class="intersectable">
        <a-animation begin="click" attribute="position" from="0 0 0" to= "0 -20 0" dur="3000"></a-animation>
-    </a-box>
+    </a-box> -->
+
+	<a-obj-model 
+		src="asset/MyHouse/MyHouse.obj" 
+		mtl="asset/MyHouse/MyHouse.mtl" 
+		position="-7 0 -21" 
+		scale="0.013 0.013 0.013">
+		<a-animation begin="click" attribute="position" from="-7 0 -21" to= "-7 -3.6 -21" dur="3000"></a-animation>
+	</a-obj-model> -->
 
 
 
