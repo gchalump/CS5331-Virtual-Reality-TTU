@@ -27,6 +27,7 @@
     </a-obj-model>
 
     <a-camera universal-controls
+        id = "main_camera"
         position="-15 3.6 -12"
         rotation="-15.9 -89 0"
         cursor-visible="true"
@@ -59,14 +60,12 @@
             
         up_control.addEventListener("click",function()
         {       
-            //main_camera.setAttribute('position',{x:6.442,y:3.6,z:-17.7});
-            main_camera.setAttribute('position',{x:13,y:11.6,z:13});
+            main_camera.setAttribute('position',{x:6.442,y:4.662,z:-17.7});
         });
 
         down_control.addEventListener("click",function()
         {       
-            //main_camera.setAttribute('position',{x:6.489,y:1.6,z:-15});
-            main_camera.setAttribute('position',{x:3,y:1.6,z:3});
+            main_camera.setAttribute('position',{x:6.489,y:1.6,z:-14.5});
         });
     </script>
   
