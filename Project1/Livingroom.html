@@ -31,15 +31,16 @@
         cursor-scale="2"
         cursor-color="#0095DD"
         cursor-opacity="0.5">
-        <!-- <a-cursor color="#FF0000"> -->
+
         <a-entity raycaster="far: 150; objects: .intersectable" cursor geometry="primitive: ring; radiusOuter: 0.015;
                               radiusInner: 0.01; segmentsTheta: 32" material="color: #FF0000; shader: flat" position="0 0 -0.75">
         </a-entity>
     </a-camera>
 
-    <a-box color="tomato" position="0 0 0" depth="2" height="2" width="2" class="intersectable">
-       <a-animation begin="click" attribute="position" from="45 0 6" to= "45 0 -10" dur="3000"></a-animation>
-    </a-box>
+
+     <a-box id="sPiano" material="color:red;" depth="2" height="2" width="2" sound="src: url(asset/Sound/Piano.wav); on: click" class="intersectable" position="0 0 0"></a-box>
+
+    <a-box id="sBrokenTV" material="color:blue;" depth="2" height="2" width="2" sound="src: url(asset/Sound/BrokenTV.wav); on: click" class="intersectable" position="3 0 0"></a-box>
 
 
 
