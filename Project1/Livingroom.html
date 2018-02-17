@@ -12,12 +12,9 @@
 <body>
 <a-scene>
     THREE.Loader.Handlers.add( /\.tga$/i, new THREE.TGALoader() );
-    <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" material="" geometry=""></a-box>
-    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" material="" geometry=""></a-sphere>
-    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="" geometry=""></a-cylinder>
-    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" material="" geometry=""></a-plane> -->
 
-    <a-entity environment="preset: forest; sunPosition: 1 5 -2; groundColor: #117957"><a-entity>
+    <!-- Set environment -->
+    <a-entity environment="preset: forest; skyType: atmosphere; sunPosition: 1 5 -2; groundYScale: 20; playArea: 1.3  groundColor: #76c82d; groundColor2: #549d28; dressingColor: #76c82d "><a-entity>
 
     <a-obj-model id="MyHouse"
         src="asset/MyHouse/MyHouse.obj" 
@@ -27,7 +24,7 @@
     </a-obj-model>
 
     <a-camera universal-controls id = "main_camera"
-        position="9.85 1.7 -8.5"
+        position="9.85 0 -8.5"
         rotation="-2.1 56 0"
         cursor-visible="true"
         cursor-scale="2"
@@ -71,17 +68,17 @@
     <a-entity gltf-model="asset/busterDrone/busterDrone.gltf" position="6 0.5 -7.5" scale="0.4 0.4 0.4" animation-mixer></a-entity>
 
    <!-- LIGHT -->
-    <a-light id="lPBalcony01"   position="8.046 5.757 -18.47" intensity="0.2"   light="type:point;color:white">
+    <a-light id="lPBalcony01"   position="8.046 5.757 -18.47" intensity="0.2"   light="color:#f8be10;type:point;">
     </a-light>
-    <a-light id="lPBalcony02"   position="7.559 6.085 -20.581" intensity="0.2" light="color:white;type:point">
+    <a-light id="lPBalcony02"   position="7.559 6.085 -20.581" intensity="0.2" light="color:#f8be10;type:point">
     </a-light>
-    <a-light id="lPTV01"        position="7.892 3.7 -9.675"   intensity="0.2"  light="color:white;type:point">
+    <a-light id="lPTV01"        position="7.892 3.7 -9.675"   intensity="0.2"  light="color:#f8be10;type:point">
     </a-light>
-    <a-light id="lPDesk01"      position="2.876 5.708 -18.059" intensity="0.2" light="color:white;type:point">
+    <a-light id="lPDesk01"      position="2.876 5.708 -18.059" intensity="0.2" light="color:#f8be10;type:point">
     </a-light>
-    <a-light id="lPChess01"     position="1.871 5.544 -6.184"  intensity="0.2" light="color:white;type:point">
+    <a-light id="lPChess01"     position="1.871 5.544 -6.184"  intensity="0.2" light="color:#f8be10;type:point">
     </a-light>
-    <a-light id="Light-All"     position="-0.122 8.224 -8.351" intensity="0.2" light="type:ambient;color:white" visible="false">
+    <a-light id="Light-All"     position="-0.122 8.224 -8.351" intensity="0.2" light="type:ambient;color:#f8be10" visible="false">
     </a-light>
     <!-- END OF LIGHT -->
 
