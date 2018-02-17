@@ -4,18 +4,18 @@
     <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/master/src/controls/universal-controls.js"></script>
     <script src="src/function.js"></script>
+    <!--
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.js"></script>
     <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    -->
 </head>
 
 
 <body>
 <a-scene>
-    THREE.Loader.Handlers.add( /\.tga$/i, new THREE.TGALoader() );
-
-    <!-- Set environment -->
+    <!-- Set environment 
     <a-entity environment="ground: flat;  preset: forest"><a-entity>
-
+    -->
     <a-obj-model id="MyHouse"
         src="asset/MyHouse/MyHouse.obj" 
         mtl="asset/MyHouse/MyHouse.mtl" 
@@ -64,10 +64,10 @@
         });
     </script>
   
-    <!-- Test glTF files  -->
+    <!-- Test glTF files  
     <a-entity gltf-model="asset/busterDrone/busterDrone.gltf" position="6 0.5 -7.5" scale="0.4 0.4 0.4" animation-mixer></a-entity>
-
-   <!-- LIGHT -->
+    --> 
+   <!-- LIGHT 
     <a-light id="lPBalcony01"   position="8.046 5.757 -18.47" intensity="0.2"   light="color:white;type:point;">
     </a-light>
     <a-light id="lPBalcony02"   position="7.559 6.085 -20.581" intensity="0.2" light="color:white;type:point">
@@ -80,6 +80,7 @@
     </a-light>
     <a-light id="Light-All"     position="-0.122 8.224 -8.351" intensity="0.2" light="type:ambient;color:white" visible="false">
     </a-light>
+    -->
     <!-- END OF LIGHT -->
 
 </a-scene>
