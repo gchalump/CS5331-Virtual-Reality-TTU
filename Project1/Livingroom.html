@@ -44,7 +44,25 @@
     <a-box id="sBrokenTV" material="color:blue;transparent:true;opacity:0" depth="0.1" height="1.7" width="2.8" sound="src:asset/Sound/BrokenTV.wav;on:click" class="intersectable" position="7.906 1.802 -6.89" geometry="width:2.8;height:1.7;depth:0.1"></a-box>
 
 
+    <!-- Stairs control -->
+    <a-box id="up_control_box" color="tomato" material="transparent:true;opacity:0.1" position="0 0 0" depth="2" height="2" width="2" class="intersectable"></a-box>
+    <a-box id="down_control_box" color="green" material="transparent:true;opacity:0.1"  position="10 10 10" depth="2" height="2" width="2"  class="intersectable"></a-box>
+    <!-- Script for stairs -->
+    <script>
+        var up_control = document.getElementById('up_control_box');
+        var down_control = document.getElementById('down_control_box');
+        var main_camera = document.getElementById('main_camera');
+            
+        up_control.addEventListener("click",function()
+        {       
+            main_camera.setAttribute('position',{x:13,y:3.6,z:13});
+        });
 
+        down_control.addEventListener("click",function()
+        {       
+              main_camera.setAttribute('position',{x:3,y:1.6,z:3});
+        });
+    </script>
 
 
     <a-sky color="#ECECEC" material="" geometry=""></a-sky>
