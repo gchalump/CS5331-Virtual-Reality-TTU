@@ -81,12 +81,12 @@
     <a-sky color="#ECECEC" material="" geometry=""></a-sky>
 
     <script>
-    	var elevator_control = document.querySelector("#elevator_control_box");
-    	var main_camera = document.querySelector("#main_camera");
+    	var elevator_control = document.getElementById('elevator_control_box');
+    	var main_camera = document.getElementById('main_camera');
     	
     	elevator_control.addEventListener("click",function()
     	{
-    		main_camera.setAttribute("position",
+    		main_camera.setAttribute('position',
     		{
     			x:10,y:10,z:10)
     		} )
