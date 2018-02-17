@@ -6,6 +6,9 @@ The project demo can be acces through the file [Livingroom.html](https://rawgit.
 
 The vido demo can be found at [VDO](http://www.youtube.com/) - The web framework used
 
+Screen short of the project
+![](Report/Project1SS.png)
+
 ## Getting Started
 
 This project is created with A frame. 
@@ -16,7 +19,9 @@ A frame doesn't provide a convienet tool for 3d model editing. To create a room 
 
 For the static furniture (without animation), I integrated them in to the room and imported them as a single object in this way the code in A frame would be cleaner to read.
 
-![](asset/Texture/StarWars.png)
+![](Report/UI-Screen.png)
+
+As shown in the picture abrove,
 
 ```
 Give examples
