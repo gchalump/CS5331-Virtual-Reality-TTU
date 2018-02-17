@@ -80,9 +80,10 @@
 	</a-obj-model> -->
 
 
-   <a-box id="sBrokenTV" material="color:blue;" depth="0.1" height="1.7" width="2.8" sound="src:asset/Sound/BrokenTV.wav;on:click" class="intersectable" position="7.906 1.802 -6.89" geometry="width:2.8;height:1.7;depth:0.1">
-   		<!-- <a-animation attribute="material.transparent" from="true" to="false" dur="1000"></a-animation> -->
-   		<a-animation attribute="material.color" from="blue" to="black" dur="3000" begin="click"></a-animation>
+   <a-box id="sBrokenTV" material="src:url(asset/Texture/Americas-GoT-Talent.png);transparent:true;opacity:0" depth="0.1" height="1.7" width="2.8" sound="src:asset/Sound/BrokenTV.wav;on:click" class="intersectable" position="7.906 1.802 -6.89" geometry="width:2.8;height:1.7;depth:0.1">
+   		<!-- <a-animation attribute="material.transparent" from="true" to="false" dur="1000" begin="click"></a-animation> -->
+   		<a-animation attribute="material.opacity" from="0" to="1" dur="1000" begin="click"></a-animation>
+   		<!-- <a-animation attribute="material.color" from="blue" to="black" dur="3000" begin="click"></a-animation> -->
    </a-box>
 
 <!-- <a-entity static-body geometry="primitive: box; depth: 0.1; height: 1.7; width: 2.8" position="7.906 1.802 -6.89" rotation="0 0 0" material="shader: standard;roughness: 1; src: url(asset/Texture/Americas-GoT-Talent.png)"></a-entity>
