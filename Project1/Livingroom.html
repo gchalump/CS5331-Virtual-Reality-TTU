@@ -11,6 +11,7 @@
 
 <body>
 <a-scene>
+    THREE.Loader.Handlers.add( /\.tga$/i, new THREE.TGALoader() );
     <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" material="" geometry=""></a-box>
     <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" material="" geometry=""></a-sphere>
     <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="" geometry=""></a-cylinder>
@@ -26,7 +27,6 @@
     </a-obj-model>
 
     <a-camera universal-controls
-        id = "main_camera"
         position="-15 3.6 -12"
         rotation="-15.9 -89 0"
         cursor-visible="true"
@@ -46,11 +46,13 @@
     <a-box id="sBrokenTV" material="color:blue;transparent:true;opacity:0" depth="0.1" height="1.7" width="2.8" sound="src:asset/Sound/BrokenTV.wav;on:click" class="intersectable" position="7.906 1.802 -6.89" geometry="width:2.8;height:1.7;depth:0.1"></a-box>
 
 
-    <!-- Stairs control -->
+    <!-- Stairs control   -->
     <a-box id="up_control_box" material="color:red;transparent:true;opacity:0.5" position="6.489 0.834 -15.35" depth="1.257" height="1.650" width="1.190" class="intersectable"></a-box>
     <a-box id="down_control_box" material="color:blue;transparent:true;opacity:0.5"  position="6.442 4.062 -17.393" depth="0.611" height="0.520" width="0.64"  class="intersectable"></a-box>
-    <!-- Script for stairs  -->
-    <script>
+    <!-- Script for stairs   -->
+
+
+<script>
         var up_control = document.getElementById('up_control_box');
         var down_control = document.getElementById('down_control_box');
         var main_camera = document.getElementById('main_camera');
@@ -67,10 +69,12 @@
             main_camera.setAttribute('position',{x:3,y:1.6,z:3});
         });
     </script>
+  
+
+
+
 
     <a-sky color="#ECECEC" material="" geometry=""></a-sky>
-
-
 
 
 
