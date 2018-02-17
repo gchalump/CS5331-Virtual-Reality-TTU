@@ -17,17 +17,17 @@
     <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="" geometry=""></a-cylinder>
     <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" material="" geometry=""></a-plane> -->
 
-    <a-entity environment="preset: forest; sunPosition: 1 5 -2; position: 0 -1 0; groundColor: #117957"><a-entity>
+    <a-entity environment="preset: forest; sunPosition: 1 5 -2; groundColor: #117957"><a-entity>
 
     <a-obj-model id="MyHouse"
         src="asset/MyHouse/MyHouse.obj" 
         mtl="asset/MyHouse/MyHouse.mtl" 
-        position="-7 0 -21" 
+        position="-7 0.1 -21" 
         scale="0.013 0.013 0.013">
     </a-obj-model>
 
     <a-camera universal-controls id = "main_camera"
-        position="9.85 0.8 -8.5"
+        position="9.85 1.7 -8.5"
         rotation="-2.1 56 0"
         cursor-visible="true"
         cursor-scale="2"
@@ -40,16 +40,16 @@
     </a-camera>
 
     <!-- SOUND CONTROL  -->
-    <a-box id="sPiano" material="color:red;transparent:true;opacity:0" depth="2" height="2" width="3" sound="src:asset/Sound/Piano.wav;on:click" class="intersectable" position="-1.368 4.444 -17.8" rotation="0 -45 0" geometry="width:3"></a-box>
+    <a-box id="sPiano" material="color:red;transparent:true;opacity:0" depth="2" height="2" width="3" sound="src:asset/Sound/Piano.wav;on:click" class="intersectable" position="-1.368 4.5 -17.8" rotation="0 -45 0" geometry="width:3"></a-box>
 
-    <a-box id="sTV" material="src:url(asset/Texture/StarWars.png);transparent:true;opacity:0" depth="0.1" height="1.7" width="2.8" sound="src:asset/Sound/StarWars.wav;on:click" class="intersectable" position="7.917 1.909 -6.905" scale="0.912 0.8 0" geometry="width:2.8;height:1.7;depth:0.1">
+    <a-box id="sTV" material="src:url(asset/Texture/StarWars.png);transparent:true;opacity:0" depth="0.1" height="1.7" width="2.8" sound="src:asset/Sound/StarWars.wav;on:click" class="intersectable" position="7.917 2 -6.905" scale="0.912 0.8 0" geometry="width:2.8;height:1.7;depth:0.1">
         <a-animation attribute="material.opacity" from="0" to="1" dur="1000" begin="click"></a-animation>
     </a-box>
     <!-- END OF SOUND CONTROL -->
 
     <!-- Stairs control   -->
-    <a-box id="up_control_box" material="color:red;transparent:true;opacity:0" position="6.489 0.9 -15.35" depth="1.257" height="1.8" width="1.190" class="intersectable"></a-box>
-    <a-box id="down_control_box" material="color:blue;transparent:true;opacity:0"  position="6.442 3.732 -17.605" depth="1.835" height="1.265" width="1.328"  class="intersectable"></a-box>
+    <a-box id="up_control_box" material="color:red;transparent:true;opacity:0" position="6.489 1 -15.35" depth="1.257" height="1.8" width="1.190" class="intersectable"></a-box>
+    <a-box id="down_control_box" material="color:blue;transparent:true;opacity:0"  position="6.442 3.8 -17.605" depth="1.835" height="1.265" width="1.328"  class="intersectable"></a-box>
     <!-- Script for stairs   -->
     <script>
         var up_control = document.getElementById('up_control_box');
@@ -58,30 +58,30 @@
             
         up_control.addEventListener("click",function()
         {       
-            main_camera.setAttribute('position',{x:6.442,y:5,z:-17.7});
+            main_camera.setAttribute('position',{x:6.442,y:5.1,z:-17.7});
         });
 
         down_control.addEventListener("click",function()
         {       
-            main_camera.setAttribute('position',{x:6.489,y:1.6,z:-14.5});
+            main_camera.setAttribute('position',{x:6.489,y:1.7,z:-14.5});
         });
     </script>
   
     <!-- Test glTF files  -->
-    <a-entity gltf-model="asset/busterDrone/busterDrone.gltf" position="6 0.4 -7.5" scale="0.4 0.4 0.4" animation-mixer></a-entity>
+    <a-entity gltf-model="asset/busterDrone/busterDrone.gltf" position="6 0.5 -7.5" scale="0.4 0.4 0.4" animation-mixer></a-entity>
 
    <!-- LIGHT -->
-    <a-light id="lPBalcony01"   position="8.046 5.757 -18.47"   light="type:point;color:white">
+    <a-light id="lPBalcony01"   position="8.046 5.757 -18.47" intensity="0.2"   light="type:point;color:white">
     </a-light>
-    <a-light id="lPBalcony02"   position="7.559 6.085 -20.581"  light="color:white;type:point">
+    <a-light id="lPBalcony02"   position="7.559 6.085 -20.581" intensity="0.2" light="color:white;type:point">
     </a-light>
-    <a-light id="lPTV01"        position="7.892 3.7 -9.675"     light="color:white;type:point">
+    <a-light id="lPTV01"        position="7.892 3.7 -9.675"   intensity="0.2"  light="color:white;type:point">
     </a-light>
-    <a-light id="lPDesk01"      position="2.876 5.708 -18.059"  light="color:white;type:point">
+    <a-light id="lPDesk01"      position="2.876 5.708 -18.059" intensity="0.2" light="color:white;type:point">
     </a-light>
-    <a-light id="lPChess01"     position="1.871 5.544 -6.184"   light="color:white;type:point">
+    <a-light id="lPChess01"     position="1.871 5.544 -6.184"  intensity="0.2" light="color:white;type:point">
     </a-light>
-    <a-light id="Light-All"     position="-0.122 8.224 -8.351"  light="type:ambient;color:white" visible="false">
+    <a-light id="Light-All"     position="-0.122 8.224 -8.351" intensity="0.2" light="type:ambient;color:white" visible="false">
     </a-light>
     <!-- END OF LIGHT -->
 
