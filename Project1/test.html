@@ -2,7 +2,10 @@
 <html>
 <head>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+
 </head>
+
+
 <body>
 <a-scene>
     THREE.Loader.Handlers.add( /\.tga$/i, new THREE.TGALoader() );
@@ -32,11 +35,9 @@
 	  	cursor-scale="2"
 	  	cursor-color="#0095DD"
 	  	cursor-opacity="0.5">
+	  	<a-cursor color="#FF0000">
 	</a-camera>
-<!-- 	<a-entity universal-controls="fly: true;
-                 movementEasing: 15;
-                 movementAcceleration: 80;">
-    </a-entity> -->
+
 
 
 
