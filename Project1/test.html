@@ -3,6 +3,7 @@
 <head>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/master/src/controls/universal-controls.js"></script>
+    <script src="src/function.js"></script>
 </head>
 
 
@@ -20,13 +21,27 @@
 	<!-- <a-obj-model src="asset/t3/t3.obj" mtl="asset/t3/t3.mtl" position="1 0 0" scale="0.2 0.2 0.2"></a-obj-model> -->
 <!-- 	<a-obj-model src="asset/t1/t1.obj" mtl="asset/t1/t1.mtl" position="1 0 0" scale="0.02 0.02 0.02"></a-obj-model>
 	<a-obj-model src="asset/t1/3DSTYLISH-dmv302.obj" mtl="asset/t1/3DSTYLISH-dmv302.mtl" position="1.124 5.386 14.426" scale="0.02 0.02 0.02" material="" obj-model=""></a-obj-model> -->
+<!-- 
+
+    <a-obj-model src="asset/decorations/officepack/shelf.items.obj" mtl="asset/decorations/officepack/shelf.items.mtl" position="4.78 1.058 2.23" rotation="0 10 0" material="" obj-model=""></a-obj-model>
+    <a-obj-model src="asset/decorations/officepack/shelf.obj" mtl="asset/decorations/officepack/shelf.mtl" position="4.574 1 1.853" rotation="0 15 0" scale="1.2 1.2 1.2" material="" obj-model=""></a-obj-model>
+    <a-obj-model src="asset/decorations/officepack/imac.obj" mtl="asset/decorations/officepack/imac.mtl" position="5.745 1.021 1.144" scale="1.3 1.2 1.2" material="" obj-model=""></a-obj-model>
+    <a-obj-model src="asset/decorations/officepack/table.obj" mtl="asset/decorations/officepack/table.mtl" position="5.298 0 1.353" scale="1.2 1.2 1.2" material="" obj-model=""></a-obj-model>
+    <a-obj-model src="asset/decorations/officepack/chair.obj" mtl="asset/decorations/officepack/chair.mtl" position="5.936 0 1.048" scale="1 1.2 1" material="" obj-model=""></a-obj-model> -->
+
+<!-- 
 
 	<a-obj-model 
 		src="asset/MyHouse/MyHouse.obj" 
 		mtl="asset/MyHouse/MyHouse.mtl" 
 		position="-7 0 -21" 
 		scale="0.013 0.013 0.013">
-	</a-obj-model>
+	</a-obj-model> -->
+
+
+
+
+
 
 	<a-camera universal-controls
 	  	position="-15 3.6 -12"
@@ -40,6 +55,10 @@
                               radiusInner: 0.01; segmentsTheta: 32" material="color: #FF0000; shader: flat" position="0 0 -0.75">
         </a-entity>
 	</a-camera>
+
+	<a-box color="tomato" position="0 0 0" depth="2" height="2" width="2" class="intersectable">
+       <a-animation begin="click" attribute="position" from="45 0 6" to= "45 0 -10" dur="3000"></a-animation>
+    </a-box>
 
 
 
