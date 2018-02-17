@@ -41,22 +41,18 @@
     </a-camera>
 
     <!-- SOUND CONTROL  -->
-
     <a-box id="sPiano" material="color:red;transparent:true;opacity:0" depth="2" height="2" width="3" sound="src:asset/Sound/Piano.wav;on:click" class="intersectable" position="-1.368 4.444 -17.8" rotation="0 -45 0" geometry="width:3"></a-box>
 
-   <a-box id="sTV" material="src:url(asset/Texture/StarWars.png);transparent:true;opacity:0" depth="0.1" height="1.7" width="2.8" sound="src:asset/Sound/StarWars.wav;on:click" class="intersectable" position="7.917 1.909 -6.905" scale="0.912 0.8 0" geometry="width:2.8;height:1.7;depth:0.1">
+    <a-box id="sTV" material="src:url(asset/Texture/StarWars.png);transparent:true;opacity:0" depth="0.1" height="1.7" width="2.8" sound="src:asset/Sound/StarWars.wav;on:click" class="intersectable" position="7.917 1.909 -6.905" scale="0.912 0.8 0" geometry="width:2.8;height:1.7;depth:0.1">
         <a-animation attribute="material.opacity" from="0" to="1" dur="1000" begin="click"></a-animation>
-   </a-box>
-
+    </a-box>
     <!-- END OF SOUND CONTROL -->
 
     <!-- Stairs control   -->
     <a-box id="up_control_box" material="color:red;transparent:true;opacity:0" position="6.489 0.9 -15.35" depth="1.257" height="1.8" width="1.190" class="intersectable"></a-box>
     <a-box id="down_control_box" material="color:blue;transparent:true;opacity:0"  position="6.442 3.732 -17.605" depth="1.835" height="1.265" width="1.328"  class="intersectable"></a-box>
     <!-- Script for stairs   -->
-
-
-<script>
+    <script>
         var up_control = document.getElementById('up_control_box');
         var down_control = document.getElementById('down_control_box');
         var main_camera = document.getElementById('main_camera');
@@ -72,8 +68,8 @@
         });
     </script>
   
-
-
+    <!-- Test glTF files  -->
+    <a-entity gltf-model="asset/busterDrone/busterDrone.gltf" position="7 -0.1 7" animation-mixer></a-entity>
 
 
     <a-sky color="#ECECEC" material="" geometry=""></a-sky>
