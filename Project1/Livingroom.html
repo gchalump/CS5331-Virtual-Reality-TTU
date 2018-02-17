@@ -51,8 +51,8 @@
     <!-- END OF SOUND CONTROL -->
 
     <!-- Stairs control   -->
-    <a-box id="up_control_box" material="color:red;transparent:true;opacity:0.5" position="6.489 0.834 -15.35" depth="1.257" height="1.650" width="1.190" class="intersectable"></a-box>
-    <a-box id="down_control_box" material="color:blue;transparent:true;opacity:0.5"  position="6.442 4.062 -17.393" depth="0.611" height="0.520" width="0.64"  class="intersectable"></a-box>
+    <a-box id="up_control_box" material="color:red;transparent:true;opacity:0" position="6.489 0.9 -15.35" depth="1.257" height="1.8" width="1.190" class="intersectable"></a-box>
+    <a-box id="down_control_box" material="color:blue;transparent:true;opacity:0"  position="6.442 3.732 -17.605" depth="1.835" height="1.265" width="1.328"  class="intersectable"></a-box>
     <!-- Script for stairs   -->
 
 
@@ -63,7 +63,7 @@
             
         up_control.addEventListener("click",function()
         {       
-            main_camera.setAttribute('position',{x:6.442,y:4.662,z:-17.7});
+            main_camera.setAttribute('position',{x:6.442,y:5,z:-17.7});
         });
 
         down_control.addEventListener("click",function()
