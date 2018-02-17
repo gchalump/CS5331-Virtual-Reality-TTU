@@ -4,7 +4,7 @@
     <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/master/src/controls/universal-controls.js"></script>
     <script src="src/function.js"></script>
-
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
 
 </head>
 
@@ -62,9 +62,13 @@
        <a-animation begin="click" attribute="position" from="0 0 0" to= "0 -20 0" dur="3000"></a-animation>
     </a-box>
 
-  
+  <a-assets>
+    <a-asset-item id="drone" src="/asset/busterDrone/busterDrone.gltf"></a-asset-item>
+  </a-assets>
 
-	<a-gltf-model src="asset/busterDrone/busterDrone.gltf" position="0 2 -3"></a-gltf-model>
+  <a-entity gltf-model="#drone" position="3 3 3" animation-mixer></a-entity>
+
+
 
 <!-- 	<a-obj-model 
 		src="asset/MyHouse/MyHouse.obj" 
