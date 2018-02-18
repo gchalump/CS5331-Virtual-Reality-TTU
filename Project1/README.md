@@ -4,10 +4,10 @@ This is an individual project for CS5331 Virtual Reality course, Spring 2018, TT
 
 The project demo can be acces through the file [Livingroom.html](https://rawgit.com/gchalump/CS5331-Virtual-Reality-TTU/master/Project1/Livingroom.html)
 
-The vido demo can be found at [VDO](http://www.youtube.com/) - The web framework used
+The vido demo can be found at [youtube](https://youtu.be/xzojKN7i2Ws) - The web framework used
 
 Screen short of the project
-![](Report/Project1SS.png)
+![](Report/p1.Chalumporn.jpg)
 
 ## Getting Started
 
