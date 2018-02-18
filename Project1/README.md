@@ -32,7 +32,7 @@ I created three interactive Objects
 #### The Piano
 When click on the piano on second floor, It will play the piano sound.
 
-![](Report/piano.png)
+![](Report/Piano.png)
 
 #### The Television
 At first floor in the living room, the big flat screen television will show image and play sound when clicked.
@@ -43,10 +43,12 @@ At first floor in the living room, the big flat screen television will show imag
 When click on the stairs on the first floor, the camera (you) will be moved up to the second floor.
 In the other hand when click on the stairs on the second floor, the camera (you) will be moved down to the first floor.
 
-![](Report/staris.png)
+![](Report/stairs.png)
 
 ### Animated glTF Objects
 As A-frame support [glTF](https://www.khronos.org/gltf/) file type, which is a 3D object file. The glTF can contain mesh, texture, and animation which easier to use compare to other types. I add the model called [busterDrone](https://sketchfab.com/models/294e79652f494130ad2ab00a13fdbafd). You can find it flying beside the big flat screen television at the first floor.
+
+![](Report/drone.png)
 
 ### Environment
 Since I create a lot of windows in my room, adding a bit of out door environment would be a good idea. I used extra liblary called [aframe-environment-component](https://github.com/feiss/aframe-environment-component) to create a 'forest' preset environment.
